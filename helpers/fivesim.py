@@ -35,7 +35,7 @@ class FiveSim:
             for operator_name in operator_names:
                 operator = data[country_name][operator_name]
                 if operator['count'] != 0:
-                    if operator['cost'] < reference['operator']['cost'] or operator['cost'] == reference['operator']['cost']:
+                    if operator['cost'] < reference['operator']['cost']:
                         reference['country'] = country_name
                         reference['cost'] = operator['cost']
                         reference['operator'] = {
